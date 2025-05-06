@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+h1 {
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+
+header {
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+header h1 {
+  color: rgb(255, 255, 255);
+}
+
+main {
+  margin: 10px;
+}
+#parent {
+  display: flex;
+  justify-content: space-around;
+}
+#parent .contents {
+  border: 3px solid rgb(238, 204, 204);
+  flex-basis: 25%;
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+#parent .contents h2 {
+  font-size: 25px;
+  border-bottom: 3px dotted rgb(236, 122, 122);
+}
+#parent .contents h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+#parent .contents p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+#parent .contents img {
+  width: 70%;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+footer a {
+  color: rgb(255, 255, 255);
+}
+footer a:visited {
+  color: rgb(193, 234, 251);
+}
+footer a:hover {
+  color: rgb(245, 178, 168);
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 768px) {
+  #parent .contents h2 {
+    font-size: 30px;
+  }
+  #parent .contents p {
+    font-size: 25px;
+  }
+  #parent {
+    display: flex;
+    flex-direction: column;
+  }
+}
