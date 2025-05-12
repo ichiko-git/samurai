@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header h1 {
+  font-size: 34px;
+  border: 2px solid #000000;
+  padding: 16px 32px;
+  align-self: center;
+}
+#header-nav ul {
+  display: flex;
+  font-size: 34px;
+  gap: 32px;
+  font-weight: bold;
+  list-style: none;
+}
+/* メインビジュアル */
+#mainvisual {
+  width: 100%;
+  text-align: center;
+}
+#mainvisual img {
+  width: 100%;
+  margin: 0 auto;
+}
+/* About */
+#about {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 34px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#about-contents {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+#about-image {
+  width: 50%;
+  text-align: center;
+}
+#about-image img {
+  width: 80%;
+  max-width: 250px;
+  border-radius: 50%;
+}
+#about-text p {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* Works */
+#works {
+  max-width: 1080px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+#works-contents {
+  display: flex;
+  gap: 5%;
+  align-items: flex-start;
+}
+.works-item {
+  width: 30%;
+}
+.works-item img {
+  width: 100%;
+}
+.works-item p {
+  text-align: left;
+}
+/* フッター */
+footer {
+  text-align: center;
+  padding-bottom: 60px;
+}
+#copyright {
+  font-size: 18px;
+}
+
+/* スマートフォン用 */
+@media screen and (max-width: 767px) {
+  /* About */
+  #about-contents {
+    flex-direction: column;
+  }
+  #about-image {
+    width: 100%;
+  }
+  /* Works */
+  #works-contents {
+    flex-direction: column;
+  }
+  .works-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .works-item p {
+    text-align: center;
+  }
+}
